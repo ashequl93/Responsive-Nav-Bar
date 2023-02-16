@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+
+h4, h3, .fa.fa-bars {
+  color: white;
+  font-size: 2rem;
+  padding: 1em;
+}
+
+.fa.fa-bars {
+  display: none;
+}
+
+.expanded-menu-items {
+  background-color: black;
+}
+
+.expanded-menu-items > * {
+  color: white;
+  padding: 1rem;
+}
+
+.expanded-menu-items--hide {
+  display: none;
+}
+
+@media screen and (max-width: 61.875rem) {
+  nav > h4 {
+    display: none;
+  }
+  h3 {
+    margin: auto;
+  }
+
+  .fa.fa-bars {
+    display: flex;
+  }
+}
+
+
